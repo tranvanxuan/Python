@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<h1>Update member</h1>
+
+<form action="updaterecord/{{ products.id }}" method="post">
+{% csrf_token %}
+Ten san pham:<br>
+<input name="tensanpham" value="{{ products.Ten_San_Pham }}">
+<br><br>
+Ma san pham:<br>
+<input name="masanpham" value="{{ products.Ma_San_Pham }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+{% endblock %}

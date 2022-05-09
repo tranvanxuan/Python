@@ -1,0 +1,1 @@
+# isupper () tra ve True neu tat ca ki tu deu la in hoa, nguoc lai tra ve False

@@ -1,0 +1,1 @@
+# tra ve phan tu nho nhat trong mot vong lap cach dung giong  voi ham max ()

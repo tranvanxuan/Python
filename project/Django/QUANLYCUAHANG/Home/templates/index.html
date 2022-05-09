@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h1>Products</h1>
+<table border="1">
+    <tr>
+        <td>Ten San Pham</td>
+        <td>Ma San Pham</td>
+    </tr>
+    {% for x in products %}
+    <tr>
+        <td>{{x.Ten_San_Pham}}</td>
+        <td>{{x.Ma_San_Pham}}</td>
+        <td><a href="productdetail/{{x.id}}">Detail</a></td>
+        <td><a href="delete/{{x.id}}">Delete</a></td>
+        <td><a href="update/{{x.id}}">Update</a></td>
+    </tr>
+    {% endfor %}
+</table>
+<p>
+    <a href="add/">Them san pham</a>
+</p>
+{% endblock %}

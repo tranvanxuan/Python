@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Them San Pham</h1>
+<form action="addrecord/" method="post">
+    {% csrf_token %}
+    FirstName:<br>
+    <input type="text" name="tensanpham"><br>
+    LastName:<br>
+    <input type="text" name="masanpham"><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
